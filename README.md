@@ -62,3 +62,8 @@ Antarmuka Pengguna (CLI/GUI): Mengembangkan antarmuka pengguna, baik itu CLI (Co
 Langkah 7: Membuat Driver Sederhana dalam Pascal
 Sebagai contoh, kita dapat membuat driver keyboard sederhana untuk menangani input dari pengguna:
 
+Langkah 8: Mengoptimalkan dan Memperluas OS
+Debugging dan Profiling: Gunakan teknik debugging seperti logging, breakpoint, dan tracing untuk menemukan dan memperbaiki masalah.
+Menambahkan Fitur Lanjut: Seperti dukungan jaringan, sistem file yang lebih kompleks, dan antarmuka pengguna grafis.
+Membuat Dokumentasi: Penting untuk mendokumentasikan kode Anda dengan baik untuk pemeliharaan di masa depan dan bagi orang lain yang mungkin tertarik untuk berkontribusi.
+
