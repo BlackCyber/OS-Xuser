@@ -67,3 +67,9 @@ Debugging dan Profiling: Gunakan teknik debugging seperti logging, breakpoint, d
 Menambahkan Fitur Lanjut: Seperti dukungan jaringan, sistem file yang lebih kompleks, dan antarmuka pengguna grafis.
 Membuat Dokumentasi: Penting untuk mendokumentasikan kode Anda dengan baik untuk pemeliharaan di masa depan dan bagi orang lain yang mungkin tertarik untuk berkontribusi.
 
+Meningkatkan Dukungan Live OS
+Untuk memastikan OS dapat dijalankan dalam mode live, kita perlu membuat image bootable yang dapat digunakan langsung tanpa instalasi. Ini memerlukan pengaturan khusus dalam bootloader dan sistem file.
+
+1. Menyiapkan Bootloader untuk Live OS:
+
+Modifikasi bootloader untuk memuat kernel dan sistem file yang sesuai. Berikut adalah contoh sederhana untuk mengatur bootloader yang memuat kernel dari image disk:
