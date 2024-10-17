@@ -1,0 +1,22 @@
+[BITS 16]          ; Mode 16-bit, digunakan untuk real-mode BIOS
+
+[ORG 0x7C00]       ; Origin set ke 0x7C00, lokasi di mana BIOS memuat bootloader
+
+start:
+    mov si, msg     ; Mengatur SI ke alamat pesan
+print_loop:
+    lodsb           ; Memuat byte dari [SI] ke AL
+    test al, al     ; Memeriksa apakah byte adalah null terminator
+    jz halt         ; Jika null terminator, berhenti
+    mov ah, 0x0E    ; BIOS teletype function
+    int 0x10        ; Panggil interrupt BIOS untuk menampilkan karakter
+    jmp print_loop  ; Ulangi sampai semua karakter ditampilkan
+
+halt:
+    cli             ; Clear interrupts
+    hlt             ; Halt CPU
+
+msg db 'Booting...', 0  ; Pesan yang akan ditampilkan
+
+times 510-($-$$) db 0   ; Isi sisanya dengan nol hingga 512 byte
+dw 0xAA55               ; Signature boot loader, wajib di akhir
