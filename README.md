@@ -73,3 +73,20 @@ Untuk memastikan OS dapat dijalankan dalam mode live, kita perlu membuat image b
 1. Menyiapkan Bootloader untuk Live OS:
 
 Modifikasi bootloader untuk memuat kernel dan sistem file yang sesuai. Berikut adalah contoh sederhana untuk mengatur bootloader yang memuat kernel dari image disk:
+
+Uji Coba dan Validasi
+1. Pengujian Unit:
+
+Uji setiap komponen sistem secara terpisah untuk memastikan bahwa mereka bekerja dengan benar.
+
+2. Pengujian Integrasi:
+
+Uji integrasi antara komponen untuk memastikan mereka berfungsi dengan baik bersama-sama.
+
+3. Pengujian Beban:
+
+Uji OS dengan beban tinggi untuk memastikan kinerjanya stabil di bawah kondisi ekstrem.
+
+4. Pengujian Keamanan:
+
+Uji sistem untuk kerentanannya terhadap serangan keamanan.
